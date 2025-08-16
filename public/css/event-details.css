@@ -1,0 +1,152 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.event-details {
+  padding: 40px 20px;
+}
+
+.event-container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-container h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.event-container .icon {
+  margin-right: 10px;
+  color: #555;
+  font-size: 18px;
+}
+.fas{
+    margin-right: 10px;
+}
+
+.event-address {
+  font-size: 16px;
+  color: #444;
+  background: #f0f0f0;
+  padding: 12px 15px;
+  border-left: 4px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.event-table th,
+.event-table td {
+  text-align: left;
+  padding: 12px 14px;
+}
+
+.event-table th {
+  background-color: #f6f6f6;
+  font-weight: 600;
+  color: #222;
+  width: 35%;
+}
+
+.event-table td {
+  background-color: #fbfbfb;
+  color: #333;
+}
+
+.event-table tr:not(:last-child) td,
+.event-table tr:not(:last-child) th {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Participate Button */
+form {
+  text-align: center;
+}
+
+.participate-btn {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.participate-btn:hover {
+  background-color: #e65c00;
+}
+
+@media (max-width: 600px) {
+  .event-container {
+    padding: 20px;
+  }
+
+  .event-container h2 {
+    font-size: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .event-container .icon {
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+
+  .event-address {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .event-table {
+    font-size: 14px;
+  }
+
+  .event-table th,
+  .event-table td {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .event-table th {
+    background-color: #f0f0f0;
+    border-bottom: none;
+  }
+
+  .event-table td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  .participate-btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
+  }
+}
+
+

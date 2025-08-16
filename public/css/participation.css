@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.event-details-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #fff;
+    min-height: 80vh;
+}
+
+.event-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 10px solid #E0663C;
+}
+
+.event-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.event-card h2 i {
+    color: #E0663C;
+    margin-right: 8px;
+}
+
+.event-card span {
+    color: #E0663C;
+    font-weight: bold;
+}
+
+.participation-form .form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.participation-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.participation-form label i {
+    color: #E0663C;
+    margin-right: 6px;
+}
+
+.participation-form input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.participation-form input:focus {
+    border-color: #E0663C;
+    outline: none;
+}
+
+.btn-orange {
+    background: #E0663C;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-orange:hover {
+    background: #E0663C;
+}
+.success-message {
+    background-color: #e6f4ea;          
+    color: #207744;                     
+    padding: 15px 40px;                   
+    margin: 20px auto;                   
+    max-width: 600px;                     
+    border-left: 6px solid #0c4715;       
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+

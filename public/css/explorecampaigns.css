@@ -1,0 +1,196 @@
+/* === Reset and Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* === Page Wrapper (fix header overlap) === */
+.page-wrapper {
+  padding-top: 110px; /* Matches sticky header height */
+}
+
+/* === Navigation Override (ensure proper sizing) === */
+nav ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* === Donation Page Layout === */
+.donation-detail-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.donation-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.donation-image {
+  flex: 1 1 60%;
+}
+
+.donation-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  max-height: 400px;
+}
+
+.donation-info {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.donation-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.amount-raised {
+  font-size: 20px;
+}
+
+.backers-info {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+  gap: 8px;
+  margin-top: -5px;
+}
+
+.backers-info i {
+  font-size: 16px;
+  color: #444;
+}
+
+/* === Progress Bar === */
+.progress-bar {
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(to right, #f7941d, #E0663C);
+}
+
+/* === Donation Form === */
+.donation-form {
+  margin-top: 10px;
+}
+
+.donation-form input[type='number'] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.btn-donate {
+  padding: 12px;
+  width: 100%;
+  background: linear-gradient(to right, #f7941d, #E0663C);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* === Success Message === */
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* === Fundraiser Description === */
+.fundraiser-description {
+  margin-top: 40px;
+}
+
+.fundraiser-description h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.fundraiser-description p {
+  line-height: 1.7;
+  color: #444;
+}
+/* === Responsive (for mobile screens) === */
+@media (max-width: 768px) {
+  .donation-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .donation-image,
+  .donation-info {
+    flex: 1 1 100%;
+  }
+
+  .donation-info h2 {
+    font-size: 20px;
+  }
+
+  .amount-raised {
+    font-size: 18px;
+  }
+
+  .backers-info {
+    font-size: 15px;
+  }
+
+  .donation-form input[type='number'] {
+    font-size: 15px;
+  }
+
+  .btn-donate {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .fundraiser-description {
+    margin-top: 30px;
+  }
+
+  .fundraiser-description h3 {
+    font-size: 20px;
+  }
+
+  .fundraiser-description p {
+    font-size: 15px;
+  }
+
+  .donation-detail-page {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+}

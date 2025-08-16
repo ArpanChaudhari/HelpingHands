@@ -1,0 +1,560 @@
+/* header */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+
+/*hero section*/
+
+.hero {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #111111, #2a2a2a, #555555, #777777);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.hero-text {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  filter: grayscale(100%);
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .hero-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .hero-img {
+    flex: 1;
+  }
+}
+
+
+.btn {
+  background-color: #E0663C;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/*emotional quotes*/
+.quotes-section {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.quotes-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quotes-container h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #0e4037;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.quotes-container h2::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background: #E0663C;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.quote {
+  font-size: 20px;
+  font-style: italic;
+  color: #444;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+
+/* why us*/
+.why-donate {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.why-donate h2 {
+  font-size: 32px;
+  color: #0e4037;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.why-donate h2::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: #e0663c;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Force 3 cards per row */
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.why-card {
+  background: #fff9f0;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-card img {
+  height: 48px;
+  margin-bottom: 15px;
+}
+
+.why-card h3 {
+  font-size: 1.1rem;
+  color: #E0663C;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Why Donate Section - 1 card per row */
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .why-card {
+    padding: 20px 15px;
+  }
+
+  .why-card h3 {
+    font-size: 1rem;
+  }
+
+  .why-card p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+/* where contribution go*/
+.impact {
+  background: #fefefe;
+  padding: 30px 20px;
+  text-align: center;
+  /* ✅ This centers the inline-block h2 */
+}
+
+.impact h2 {
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #0e4037;
+  font-size: 32px;
+}
+
+.impact h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 3px;
+  width: 160px;
+  background-color: #E0663C;
+  border-radius: 2px;
+}
+
+
+
+.impact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.impact-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+}
+
+.impact-card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* Impact Section - stack cards */
+@media (max-width: 768px) {
+  .impact-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .impact-card {
+    padding: 18px 14px;
+  }
+
+  .impact-card img {
+    width: 50px;
+  }
+}
+
+
+
+/*form*/
+.success-message {
+    background-color: #e6f4ea;          
+    color: #207744;                     
+    padding: 15px 40px;                   
+    margin: 20px auto;                   
+    max-width: 600px;                     
+    border-left: 6px solid #0c4715;       
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.donation-form {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.donation-form h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #0e4037;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.donation-form h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 3px;
+  width: 120px;
+  background-color: #E0663C;
+  border-radius: 2px;
+}
+
+form {
+  background: #fff;
+  padding: 40px 30px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #e0663c;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(224, 102, 60, 0.1);
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #e0663c;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #c6532f;
+  transform: translateY(-2px);
+}
+
+.secure-note {
+  font-size: 0.95rem;
+  color: #e0663c;
+  /* your theme color */
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.secure-note i {
+  color: #e0663c;
+  font-size: 1rem;
+}
+
+/* Donation Form */
+@media (max-width: 768px) {
+  .donation-form {
+    padding: 20px 15px;
+  }
+
+  .donation-form h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  form {
+    padding: 25px 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+
+  .secure-note {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* FAQ Section */
+/* FAQ Section */
+.faq {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* FAQ Heading */
+.faq h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #0e4037;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.faq h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 3px;
+  width: 60px;
+  background-color: #E0663C;
+  border-radius: 2px;
+}
+
+/* FAQ Item Container */
+.faq-item {
+  max-width: 700px;
+  margin: 15px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f5f5f5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.faq-item h3 {
+  margin: 0;
+  padding: 16px 20px;
+  background: #eee;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.1rem;
+  position: relative;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.faq-item h3::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #E0663C;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+/* Active State */
+.faq-item.active h3 {
+  background-color: #E0663C;
+  color: #fff;
+}
+
+.faq-item.active h3::after {
+  content: "−";
+  color: #fff;
+}
+
+/* Answer (hidden by default) */
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  visibility: hidden;
+  background: #fafafa;
+  border-top: 1px solid #ddd;
+  transition: all 0.4s ease;
+  text-align: left;
+}
+
+/* Show answer when active */
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 15px 20px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq {
+    padding: 20px 15px;
+  }
+
+  .faq h2 {
+    font-size: 1.6rem;
+  }
+
+  .faq-item h3 {
+    font-size: 1rem;
+    padding: 14px 16px;
+  }
+
+  .faq-answer {
+    font-size: 0.95rem;
+    padding: 0 16px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 15px 16px;
+  }
+}
